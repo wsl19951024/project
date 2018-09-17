@@ -1,0 +1,1 @@
+"use strict";define(function(){function n(){}return n.prototype={constructor:n,zoomshow:function(){}},new n});

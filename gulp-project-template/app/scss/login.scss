@@ -1,0 +1,296 @@
+@import "common";
+@charset "utf-8";
+/*头部*/
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header .header_in{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*cursor: pointer;*/
+    /*background-color: skyblue;*/
+}
+/*头部左边*/
+.header .header_logo{
+    float: left;
+    width: 190px;
+    height: 100%;
+    /*background-color: red;*/
+}
+.header .header_logo>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /*background-color: purple;*/
+    background: url("../images/nubia-logo.png");
+    overflow: hidden;
+}
+
+/*头部右边*/
+.header .header_nav{
+    float: right;
+    width: 740px;
+    height: 100%;
+    /*background-color: green;*/
+}
+/*头部导航一*/
+.header .header_nav_left{
+    float: left;
+    width: 550px;
+    height: 100%;
+    /*background-color: gold;*/
+}
+.header .header_nav_left>li>a{
+    color: #fff;
+}
+.header .header_nav_left>li{
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 40px;
+    /*height: 60px;*/
+    line-height: 60px;
+}
+.header .header_nav_left>li:hover a{
+    color: #e82c07;
+}
+
+/*头部导航二*/
+.header .header_nav_right{
+    float: right;
+    width: 150px;
+    height: 100%;
+    /*background-color: pink;*/
+}
+.header .header_nav_right>li{
+    float: right;
+    line-height: 60px;
+    text-align: center;
+    padding-left: 10px;
+}
+.header .header_nav_right>li:last-child{
+    padding-left:0;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/nubia-syb-all.png");
+}
+.header .header_nav_right>li:hover a{
+    color: #e82c07;
+}
+
+/*登录面板*/
+.mask{
+    position: fixed;
+    left: 0;
+    top:0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    z-index: 10;
+
+   /* display: none;*/
+}
+
+.mask .mask-center{
+    width: 700px;
+    height: 420px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -160px;
+    margin-left: -350px;
+    border-radius: 5px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.mask .mask-center .center_box{
+    width: 286px;
+    margin: 20px auto 0;
+}
+
+.mask .mask-center .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../images/msg_close.png") 0 0;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.mask .mask-center .logo-img{
+    display: block;
+    width: 106px;
+    margin: 0 auto;
+}
+
+.txtBox{
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    color:#999
+}
+.txtBox span:nth-child(1){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    left: 0;
+}
+.txtBox span:nth-child(3){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    right: 0;
+}
+.center_box .buttons{
+    margin: 15px 0 20px;
+    text-align: center;
+    /*font-size: 0;*/
+    letter-spacing: -999px;
+
+}
+.center_box .buttons a {
+    background-image: url('../images/login_icons_tiny.svg');
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    letter-spacing: 0;
+
+}
+
+.center_box .buttons a:nth-child(1){
+    display: inline-block;
+}
+.center_box .buttons a:nth-child(2){
+    display: inline-block;
+    background-position: -80px 0;
+}
+.center_box .buttons a:nth-child(3){
+    display: inline-block;
+    background-position: -160px 0;
+}
+.center_box .buttons a:nth-child(4){
+    display: inline-block;
+    background-position: -240px 0;
+}
+.center_box .buttons a:nth-child(5){
+    display: inline-block;
+    background-position: -320px 0;
+    margin-right: 0;
+
+}
+
+.center_box .mail-login {
+    margin-top: 15px;
+}
+
+.center_box .mail-login .clear-input {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size:12px;
+}
+
+.clear-input {
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    width: 250px;
+    outline-color: red;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;
+}
+
+.btn18 {
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.rbtn {
+    display: block;
+    background: #E53E49;
+    background: linear-gradient( #E53E49, #D43636);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 1px 0 rgba(255,255,255,.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    border: 1px solid #C90000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.switch-back {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.red-link {
+    color: #9A0000;
+}
+.center_box a {
+    cursor: pointer;
+}
+.center_box .mail-login div span{ 
+    display:block;
+    float:right;
+    position:absolute;
+    right:-180px;
+    top:0px;
+    color:red;
+    line-height: 36px;
+    display:none;
+
+}
+.center_box .mail-login div{
+    width: 285px;
+    height:30px;
+    margin-bottom:15px;
+    position:relative;
+}
+.center_box .mail-login div span{ 
+    display:block;
+    float:right;
+    position:absolute;
+    right:-80px;
+    top:0px;
+    color:red;
+    line-height: 36px;
+    display:none;
+}
+#sure{
+    width:280px;
+    position:absolute;
+    left:210px;
+    height:36px;
+    background:#E53E49;
+    outline: none;
+    color:white;
+    border:none;
+    cursor:pointer;
+}

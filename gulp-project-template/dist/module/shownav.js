@@ -1,0 +1,1 @@
+"use strict";define(function(){function n(){}return n.prototype={constructor:n,show:function(){$("#show").on("click",function(){$("#nav").stop().slideToggle(400)})}},new n});

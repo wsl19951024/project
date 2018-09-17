@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["carousel","sidebar","shownav"],function(e,i,n){e.lunbo1(),i.side(),n.show()})});

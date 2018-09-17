@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>努比亚-登陆</title>
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+    <script type="text/javascript" src="/libs/require.js" data-main="/js/log.js"></script>
+</head>
+<body>
+<!--顶部-->
+<div class="header">
+    <!--版心-->
+    <div class="header_in">
+        <div class="header_logo">
+            <a href="javascript:;" title='努比亚'></a>
+        </div>
+        <div class="header_nav">
+            <ul class="header_nav_left">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="shangcheng.html">商城</a></li>
+                <li id="product"><a href="list.html">产品</a></li>
+                <li><a href="javascript:;">应用</a></li>
+                <li><a href="javascript:;">服务</a></li>
+                <li><a href="javascript:;">体验店</a></li>
+                <li><a href="javascript:;">社区</a></li>
+            </ul>
+            <ul class="header_nav_right">
+                <li><a href="login.html" class="login" id="login"><span class="text">登录</span></a></li>
+                <li><a href="register.html">注册</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--登录面板-->
+<section id="mask" class="mask">
+    <div id="mask_center" class="mask-center">
+        <!--关闭-->
+        <a href="javascript:;" class="close-btn" id="close_btn"></a>
+        <!--logo-->
+        <img class="logo-img" src="../images/logologo.png" alt="">
+        <!--内容-->
+        <div class="center_box">
+            <!--第三方帐号登录-->
+            <div class="txtBox">
+                <span></span>
+                <span class="txt">使用第三方帐号登录</span>
+                <span></span>
+            </div>
+            <!--按钮图片-->
+            <div class="buttons">
+                <a href="javascript:;" title="微博帐号登录" rel="nofollow" class="weibo"></a>
+                <a href="javascript:;" title="QQ帐号登录" rel="nofollow" class="qzone"></a>
+                <a href="javascript:;" title="微信帐号登录" rel="nofollow" class="wechat"></a>
+                <a href="javascript:;" title="豆瓣帐号登录" rel="nofollow" class="douban"></a>
+                <a href="javascript:;" title="人人帐号登录" rel="nofollow" class="renren"></a>
+            </div>
+            <div class="txtBox">
+                <span></span>
+                <span class="txt">使用您的用户名登录</span>
+                <span></span>
+            </div>
+            <!--表单-->
+            <form action="/" class="mail-login" method="get" id="form2">
+                <input type="hidden" name="_ref" value="frame">
+                <div>
+                    <input type="text" name="email" placeholder="请输入用户名" class="clear-input" id="isphone"><span>请填写信息！</span><span>
+账号有误！</span> 
+                </div>
+                    
+                <div>
+                    <input name="password" type="password" placeholder="密码" class="clear-input" id="pwd"><span>请填写密码！</span><span>
+密码错误！</span> 
+                </div>
+
+                <a href=""  class="btn btn18 rbtn">
+                    <input type="submit" value='登陆' id="sure" class="text">
+                </a>
+            </form>
+            <div class="switch-back">
+                <a class="red-link">忘记密码»</a>
+                <a class="red-link" href="register.html">点击注册»</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

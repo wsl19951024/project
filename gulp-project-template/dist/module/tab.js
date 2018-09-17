@@ -1,0 +1,1 @@
+"use strict";define(function(){function i(){}return i.prototype={constructor:i,showtab:function(i){var t=this;this.navLi=i.navLi,this.contLi=i.contLi,this.navLi.click(function(){$(this).addClass("current"),$(this).siblings().removeClass("current");var i=$(this).index(),s=t.contLi.eq(i);s.siblings().removeClass("show"),s.addClass("show")})}},new i});

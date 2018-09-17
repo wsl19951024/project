@@ -1,0 +1,499 @@
+@import "common1";
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+/*header*/
+header{
+	height:67px;
+	width: 100%;
+	background: #282828;
+	position: fixed;
+	z-index: 999;
+}
+header .head{
+	width: 1210px;
+	height: 100%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+header .head .logo{
+	width: 217px;
+	height: 67px;
+	float: left;
+	background: url(../images/logo.jpg) no-repeat;
+}
+header .head .logo:after{
+	content: "努比亚";
+	visibility: hidden;
+}
+header .head .nav{
+	width: 795px;
+	height: 67px;
+	float: left;
+}
+header .head .nav ul li{
+	float: left;
+	height: 67px;
+	padding: 0 26px;
+	line-height: 67px;
+	font-size: 14px;
+}
+header .head .nav ul li:hover{background: #ee4834;}
+header .head .nav ul li a{color: white;display: block;height: 67px;}
+header .head .nav ul li:hover a{color: #ccc;}
+header .head .shopcar{
+	width: 195px;
+	height: 67px;
+	float: left;
+	background: url(../images/shopcar.jpg) no-repeat right;
+}
+header .head .shopcar img{
+	margin-top: 30px;
+	margin-left: 35px;
+}
+header .head .shopcar .car{
+	display: block;
+	float: right;
+	width: 130px;
+	height: 67px;
+	/*background: black;*/
+}
+/*banner*/
+#div1 {
+	height:600px; 
+	margin:0 auto; 
+	position:relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+#div1 ul {
+	/*width:1550px;*/
+	height: 600px;
+    position:absolute;
+    left:0;
+    top: 0;
+   /* overflow: hidden;*/
+}
+#div1 ul li{
+	height:600px;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*overflow:hidden; */
+}
+#div1>ul>li.ac{
+	opacity: 1;
+	display: block;
+}
+#div1>ul>li>img{
+/*	width:1210px;*/
+	height: 600px;
+	/*background-size:100% 100%;*/
+}
+#div1 ol {
+    width: 150px;
+    height: 20px;
+    /*background-color: yellow;*/
+    position: absolute;
+    left: 50%;
+    margin-left:-75px;
+    bottom: 20px;
+}
+#div1 ol li{
+    float: left;
+    width: 13px;
+    height: 13px;
+    /*background-color: purple;*/
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid transparent;/*透明色*/
+    transition: all 0.5s;
+}
+#div1 ol li.ac{
+	border-color: red;
+    transform: scale(1.2);
+    background-color: transparent;
+}
+#div1 ol li:hover{
+    border-color: red;
+    transform: scale(1.2);
+    background-color: transparent;
+}
+#div1>a{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,.2);
+    border: 2px solid salmon;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+}
+#goPrev{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    border-radius: 50%;
+    margin-top: -25px;
+    display: none;
+}
+#goNext{
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    border-radius: 50%;
+    margin-top: -25px;
+    display: none;
+}
+//title
+.title{
+	width:1400px;
+	height:50px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.title .red-link{
+	cursor:pointer;
+	color: #9A0000;
+	font-size: 14px;
+	padding-top: 20px;
+}
+// @content;
+.content{
+	height:2500px;
+}
+.content .content_main{
+	height:100%;
+	width:1400px;
+	margin:0 auto;
+	// background: red;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+.content .content_main div{
+	width:300px;
+	height:360px;
+	// background: pink;
+	cursor:pointer;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.content .content_main div a{
+	display: block;
+	width:300px;
+	height:300px;
+	background: url("../images/listphone1.png") no-repeat;
+	background-size:cover;
+	transition:all 1s;
+}
+.content .content_main div:nth-child(2) a{
+	background: url("../images/listphone2.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(3) a{
+	background: url("../images/listphone3.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(4) a{
+	background: url("../images/listphone4.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(5) a{
+	background: url("../images/listphone5.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(6) a{
+	background: url("../images/listphone6.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(7) a{
+	background: url("../images/listphone15.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(8) a{
+	background: url("../images/listphone8.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(9) a{
+	background: url("../images/listphone9.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(10) a{
+	background: url("../images/listphone10.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(11) a{
+	background: url("../images/listphone11.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(12) a{
+	background: url("../images/listphone12.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(13) a{
+	background: url("../images/listphone13.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(14) a{
+	background: url("../images/listphone14.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(15) a{
+	background: url("../images/listphone15.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(16) a{
+	background: url("../images/listphone16.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(17) a{
+	background: url("../images/listphone17.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(18) a{
+	background: url("../images/listphone18.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(19) a{
+	background: url("../images/listphone19.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(20) a{
+	background: url("../images/listphone20.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(21) a{
+	background: url("../images/listphone21.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(22) a{
+	background: url("../images/listphone22.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(23) a{
+	background: url("../images/listphone23.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div:nth-child(24) a{
+	background: url("../images/listphone24.png") no-repeat;
+	background-size:cover;
+}
+.content .content_main div a:hover{
+	transform: scale(1.1);
+}
+.content .content_main div p{
+	margin-top:20px;
+	width:300px;
+	height:20px;
+	text-align: center;
+	color:#666666;
+}
+.content .content_main div p:hover{
+	color:orange;
+}
+.content .content_main div span{
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	color:#ccc;
+}
+/*link*/
+.link{
+	height: 448px;
+	background: #efeeeb;
+}
+.link .links{
+	width: 1176px;
+	height: 320px;
+	margin: 0 auto;
+}
+.link .links ul{
+	width: 193px;
+	height: 320px;
+	float: left;
+	margin-top: 65px;
+}
+.link .links ul p{
+	font-size: 18px;
+	color: #666666;
+	height: 35px;
+}
+.link .links ul li{
+	height: 22px;
+	font-size: 12px;
+}
+.link .links ul li a{color: #666666;}
+.link .links ul li:hover a{color: red;}
+.link .links ul:nth-child(6) p:nth-child(2){
+	font-size: 12px;
+	height: 25px;
+}
+.link .links ul:nth-child(6) p:nth-child(2) span{
+	display: inline-block;
+	width: 28px;
+	height: 12px;
+	background: url(../img/21.gif) no-repeat;
+}
+.link .links ul:nth-child(6) p:nth-child(3){
+	font-size: 12px;
+	color: #999999;
+}
+/*footer*/
+.footer{
+	height: 237px;
+	text-align: center;
+	font-size: 12px;
+}
+.footer p:nth-child(1){
+	width: 115px;
+	height: 28px;
+	background: url(../images/22.gif) no-repeat;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.footer p:nth-child(2) a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 22px 5px;
+}
+.footer p:nth-child(2) a:nth-child(1){background: url(../images/23.gif) no-repeat;}
+.footer p:nth-child(2) a:nth-child(2){background: url(../images/24.gif) no-repeat;}
+.footer p:nth-child(2) a:nth-child(3){background: url(../images/25.gif) no-repeat;}
+.footer p:nth-child(3) span{
+	color: #e95f46;
+	margin-left: 20px;
+}
+.footer p:nth-child(4){margin: 15px 0;margin-top: 0;}
+.footer p:nth-child(4) b{
+	display: inline-block;
+	font-weight: normal;
+	text-align: right;
+	margin: 0 10px;
+}
+.footer p:nth-child(4) b:nth-child(1){
+	width: 225px;
+	background: url(../images/26.gif) no-repeat;
+}
+.footer p:nth-child(4) b:nth-child(2){
+	width: 185px;
+	color: #e95f46;
+	background: url(../images/27.gif) no-repeat;
+}
+.footer p:nth-child(4) b:nth-child(3){
+	position: relative;
+	top:20px;
+	width: 84px;
+	height: 35px;
+	background: url(../images/28.gif) no-repeat;
+	
+}
+.footer p:nth-child(4) b:nth-child(4){
+	position: relative;
+	top:20px;
+	width: 87px;
+	height: 35px;
+	background: url(../images/29.gif) no-repeat;
+}
+.footer p:nth-child(5) b{
+	color: #e95f46;
+	margin: 0 10px;
+	font-weight: normal;
+}
+.footer p:nth-child(5) b:nth-child(4){
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	width: 95px;
+	height: 26px;
+	background: url(../images/30.gif) no-repeat;
+}
+/*bg*/
+.bg{
+	width: 30px;
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+	bottom: 120px;
+	right: 55px;
+	transform: scale(2.5);
+
+}
+.bg a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-top: 2px;
+}
+.bg .one{
+	margin-top: 0;
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -216px 0;
+	}
+.bg .one:hover{
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -216px -30px;
+	}
+.bg .two{
+	margin-top: 5px;
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -246px 0;
+	}
+.bg .two:hover{
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -246px -30px;
+	}
+.bg .three{
+	margin-top: 5px;
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -186px 0;
+	}
+.bg .three:hover{
+	background: url(../images/nubia-syb-all.png) no-repeat;
+	background-position: -186px -30px;
+	}
+/*右下角的样式*/
+.elevator-item{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.elevator-item .elevator {
+     width: 40px;
+     height: 36px;
+     background: url("../images/iconsprite_btbar.png") 8px 6px no-repeat;
+     display: inline-block;
+     background-color: #444;
+     background-color: rgba(0, 0, 0, .6);
+     border-radius: 4px;
+     margin-bottom: 4px;
+    /*display: none;*/
+ }
+
+.elevator-item .elevator:hover{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.elevator-item .plus {
+    width: 40px;
+    height: 36px;
+    background: url("../images/iconsprite_btbar.png") 8px -34px no-repeat;
+    display: inline-block;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 4px;
+}
+
+.elevator-item .plus:hover{
+    background-color: rgba(0, 0, 0, .8);
+}

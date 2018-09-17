@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["carousel","header"],function(e,i){e.lunbo2(),i.init()})});

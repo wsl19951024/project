@@ -1,0 +1,1 @@
+"use strict";define(function(){function o(){}return o.prototype={constructor:o,side:function(){$(window).scroll(function(){800<=$("html,body").scrollTop()?$(".aside img").show(1e3):$(".aside img").hide(1e3)})}},new o});
